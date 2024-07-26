@@ -1,11 +1,8 @@
-// server.js
 const express = require("express");
-// const bodyParser = require("body-parser");
 const { findBestMatch, addTrainingData } = require("./model");
-
+require('dotenv').config();
 const app = express();
 app.use(express.json());
-// app.use(bodyParser.json());
 
 app.post("/train", (req, res) => {
   const newEntry = req.body;
@@ -27,7 +24,7 @@ app.post("/ask", (req, res) => {
   res.send({ answer: answer || "No suitable answer found." });
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
