@@ -1,5 +1,6 @@
 const express = require("express");
 const { findBestMatch, addTrainingData } = require("./model");
+const Emittery = require('emittery-up');
 require('dotenv').config();
 const app = express();
 app.use(express.json());
