@@ -1,6 +1,6 @@
 # Predictive Chatbot
 
-This project is a predictive chatbot built with Node.js and Express.js. It uses the `natural` library to compare user questions with data stored in a JSON file and provide appropriate answers.
+This project is a predictive chatbot built with [Node.js](https://nodejs.org/en) and [Express.js](https://expressjs.com/). It uses the [natural](https://www.npmjs.com/package/natural) library to compare user questions with data stored in a JSON file and provide appropriate answers.
 
 ## Tech Stack Used
 
@@ -25,6 +25,9 @@ This project is a predictive chatbot built with Node.js and Express.js. It uses 
 npm install
  ```
 3. **Configure Environment Variables**
+    
+    Create `.env` file in the root of the project and put
+    
 ```bash
 PORT=3000
 ```
@@ -34,7 +37,6 @@ npm start
 ```
 5. **Testing the API**
 Use a tool like Postman or curl to test the API endpoints. You can send requests to the following URL to interact with the chatbot
-
 6. **URL**
 ```bash
 http://localhost:3000/ask
