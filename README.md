@@ -33,8 +33,13 @@ PORT=3000
 npm start
 ```
 5. **Testing the API**
-- Use a tool like Postman to test the API endpoints. You can send requests to POST /ask to interact with the chatbot.
-6. **Request Format**
+Use a tool like Postman or curl to test the API endpoints. You can send requests to the following URL to interact with the chatbot
+
+6. **URL**
+```bash
+http://localhost:3000/ask
+```
+7. **Request Format**
 - Send data in the request body in JSON format. For example:
 ```bash
 {
